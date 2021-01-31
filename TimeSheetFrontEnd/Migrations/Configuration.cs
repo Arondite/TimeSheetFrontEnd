@@ -5,14 +5,14 @@ namespace TimeSheetFrontEnd.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<TimeSheetFrontEnd.DAL.TimeSheetFrontEndContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DAL.TimeSheetFrontEndContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(TimeSheetFrontEnd.DAL.TimeSheetFrontEndContext context)
+        protected override void Seed(DAL.TimeSheetFrontEndContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -13,7 +13,7 @@ namespace TimeSheetFrontEnd.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202101310418132_InitialMigration"; }
+            get { return "202101310434436_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source
