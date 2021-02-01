@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    ViewBag.Title = "UserLogIn";
+	///This is a basic login for the Admin. With the correct credentials, they can enter the Admin page.
+	if (IsPost)
+	{
+		var username = Request["username"];
+		var password = Request["password"];
+		if (username == "Arondite" && password == "Stephenisgod42!")
+		{
+			App.Admin = 1;
+			Response.Redirect("~/UserLogIn/AdminPage");
+		}
+	}
+}
+
+<h2>Index</h2>
+<div class="container-fluid">
+    <div class="container">
+        <h1>User Log In</h1>
+        <br><br>
+        <form action="" method="post" class="form-horizontal" id="login">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Username:</label>
+                <div class="col-sm-5">
+                    <input name="username" type="text" required="required" id="username" maxlength="50" class="form-control">
+                </div>
+                <br><br>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Password:</label>
+                <div class="col-sm-5">
+                    <input name="password" type="password" required="required" class="form-control" id="password" maxlength="30">
+                </div>
+                <br><br>
+            </div>
+            <div class="col-sm-offset-2 col-sm-5">
+                <input class="btn btn-primary" name="submit" type="submit" id="submit" formmethod="POST" title="Submit" value="Submit">
+                &nbsp;&nbsp;&nbsp;
+                <input class="btn btn-danger" name="reset" type="reset" id="reset" title="Reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<br>

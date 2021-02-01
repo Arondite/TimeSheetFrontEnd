@@ -130,6 +130,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PositionsController.cs" />
     <Compile Include="Controllers\ShiftsController.cs" />
+    <Compile Include="Controllers\UserLogInController.cs" />
     <Compile Include="DAL\TimeSheetFrontEndContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -195,6 +196,8 @@
     <Content Include="Views\Shifts\Details.cshtml" />
     <Content Include="Views\Shifts\Edit.cshtml" />
     <Content Include="Views\Shifts\Index.cshtml" />
+    <Content Include="Views\UserLogIn\Index.cshtml" />
+    <Content Include="Views\UserLogIn\AdminPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
