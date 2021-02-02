@@ -3,7 +3,10 @@
     ViewBag.Title = "AdminPage";
 }
 
-<h2>AdminPage</h2>
-<div>
+<h2>Admin Page</h2>
+<div class="list-group">
     <a href="@Url.Action("Create", "Employees")" class="list-group-item">Create Employee</a>
+    <a href="@Url.Action("Edit", "Employees")" class="list-group-item">Update Employee Information</a>
+    <a href="@Url.Action("Create", "Shifts")" class="list-group-item">Add Shift</a>
+    <a href="@Url.Action("Edit", "Shifts")" class="list-group-item">Edit Shift</a>
 </div>
