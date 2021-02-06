@@ -139,6 +139,10 @@
     <Compile Include="Migrations\202101310434436_InitialMigration.Designer.cs">
       <DependentUpon>202101310434436_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102060630474_AddedNameToEmployeeEntityTable.cs" />
+    <Compile Include="Migrations\202102060630474_AddedNameToEmployeeEntityTable.Designer.cs">
+      <DependentUpon>202102060630474_AddedNameToEmployeeEntityTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Position.cs" />
@@ -218,6 +222,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202101310434436_InitialMigration.resx">
       <DependentUpon>202101310434436_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102060630474_AddedNameToEmployeeEntityTable.resx">
+      <DependentUpon>202102060630474_AddedNameToEmployeeEntityTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
