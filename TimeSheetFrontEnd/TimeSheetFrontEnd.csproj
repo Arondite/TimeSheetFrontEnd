@@ -126,7 +126,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\EmployeeLoginsController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PositionsController.cs" />
@@ -150,9 +149,12 @@
     <Compile Include="Migrations\202102102236314_AddedEntityEmployeeLogin.Designer.cs">
       <DependentUpon>202102102236314_AddedEntityEmployeeLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102102301523_TookAwayEntityTable.cs" />
+    <Compile Include="Migrations\202102102301523_TookAwayEntityTable.Designer.cs">
+      <DependentUpon>202102102301523_TookAwayEntityTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\EmployeeLogin.cs" />
     <Compile Include="Models\Position.cs" />
     <Compile Include="Models\Shift.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -212,11 +214,6 @@
     <Content Include="Views\UserLogIn\Index.cshtml" />
     <Content Include="Views\UserLogIn\AdminPage.cshtml" />
     <Content Include="Views\TimeCard\Index.cshtml" />
-    <Content Include="Views\EmployeeLogins\Create.cshtml" />
-    <Content Include="Views\EmployeeLogins\Delete.cshtml" />
-    <Content Include="Views\EmployeeLogins\Details.cshtml" />
-    <Content Include="Views\EmployeeLogins\Edit.cshtml" />
-    <Content Include="Views\EmployeeLogins\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102102236314_AddedEntityEmployeeLogin.resx">
       <DependentUpon>202102102236314_AddedEntityEmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102102301523_TookAwayEntityTable.resx">
+      <DependentUpon>202102102301523_TookAwayEntityTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
