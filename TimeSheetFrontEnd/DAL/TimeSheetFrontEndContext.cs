@@ -21,6 +21,7 @@ namespace TimeSheetFrontEnd.DAL
 		public DbSet<Employee> Employees { get; set; }
 		public DbSet<Position> Positions { get; set; }
 		public DbSet<Shift> Shifts { get; set; }
+		public DbSet<EmployeeLogin> EmployeeLogins { get; set; }
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
