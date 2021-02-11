@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TimeSheetFrontEnd.ViewModels;
 
 namespace TimeSheetFrontEnd.Controllers
 {
@@ -11,6 +12,11 @@ namespace TimeSheetFrontEnd.Controllers
         // GET: TimeCard
         public ActionResult Index()
         {
+            return View();
+        }
+        public ActionResult TimeCardCreation(DateTime date)
+        {
+            TimeCard timeCard = new TimeCard();
             return View();
         }
     }

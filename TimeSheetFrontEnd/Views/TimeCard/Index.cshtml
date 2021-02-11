@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Time Card Creation";
+    DateTime CalendarValue = DateTime.Now;
 }
 
 <h2>Time Card Creation</h2>
@@ -19,9 +20,9 @@
             <h1 id="currentDate"></h1>
             <div class="field">
                 <label for="date">Choose Day</label>
-                <form class="form-input" id="date-search" onsubmit="return setDate(this)">
-                    <input type="date" class="text-field" name="date" id="date" required>
-                    <button type="submit" class="btn btn-small" title="Pesquisar"><i class="fas fa-search"></i></button>
+                <form class="form-input" id="date-search" action="@Url.Action("TimeCardCreation", "TimeCard", new { value = CalendarValue })">
+                    <input type="date" class="text-field" name="date" id="date" value="@CalendarValue" required>
+                    <button type="submit" class="btn btn-small"><i class="fas fa-search"></i></button>
                 </form>
             </div>
             @*<div class="day-assets">
