@@ -3,20 +3,52 @@
     ViewBag.Title = "Time Card Creation";
 }
 
-    <h2>Time Card Creation</h2>
+<h2>Time Card Creation</h2>
 
-    <div class="container-fluid">
-        <div class="container">
-            <h1>User Log In</h1>
-            <br><br>
-            <form action="" method="post" class="form-horizontal" id="login">
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">Username:</label>
-                    <div class="col-sm-5">
-                        <input name="username" type="text" required="required" id="username" maxlength="50" class="form-control">
-                    </div>
-                    <br><br>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <title>Calendar - UI</title>
+</head>
+    <div class="container">
+        <div class="calendar-assets">
+            <h1 id="currentDate"></h1>
+            <div class="field">
+                <label for="date">Choose Day</label>
+                <form class="form-input" id="date-search" onsubmit="return setDate(this)">
+                    <input type="date" class="text-field" name="date" id="date" required>
+                    <button type="submit" class="btn btn-small" title="Pesquisar"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            @*<div class="day-assets">
+                <button class="btn" onclick="prevDay()" title="Dia anterior"><i class="fas fa-chevron-left"></i> </button>
+                <button class="btn" onclick="resetDate()" title="Dia atual"><i class="fas fa-calendar-day"></i> Hoje</button>
+                <button class="btn" onclick="nextDay()" title="Próximo dia"><i class="fas fa-chevron-right"></i> </button>
+            </div>
+        </div>*@
+        @*<div class="calendar" id="table">
+            <div class="header">
+                <div class="month" id="month-header">
+
                 </div>
-            </form>
+                <div class="buttons">
+                    <button class="icon" onclick="prevMonth()" title="Mês anterior"><i class="fas fa-chevron-left"></i></button>
+                    <button class="icon" onclick="nextMonth()" title="Próximo mês"><i class="fas fa-chevron-right "></i></button>
+                </div>
+            </div>*@
         </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/812e771e48.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
