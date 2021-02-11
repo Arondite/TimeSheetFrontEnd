@@ -129,6 +129,7 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PositionsController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\ShiftsController.cs" />
     <Compile Include="Controllers\TimeCardController.cs" />
     <Compile Include="Controllers\UserLogInController.cs" />
@@ -214,6 +215,7 @@
     <Content Include="Views\UserLogIn\Index.cshtml" />
     <Content Include="Views\UserLogIn\AdminPage.cshtml" />
     <Content Include="Views\TimeCard\Index.cshtml" />
+    <Content Include="Views\Reports\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
