@@ -198,9 +198,9 @@ textarea {
 	outline: 0;
 }
 
-	.icon:hover {
-		cursor: pointer;
-	}
+.icon:hover {
+	cursor: pointer;
+}
 
 #calendar {
 	width: 100%;

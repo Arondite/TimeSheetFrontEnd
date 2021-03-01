@@ -130,6 +130,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PositionsController.cs" />
     <Compile Include="Controllers\ReportsController.cs" />
+    <Compile Include="Controllers\ShiftCreatorController.cs" />
     <Compile Include="Controllers\ShiftsController.cs" />
     <Compile Include="Controllers\TimeCardController.cs" />
     <Compile Include="Controllers\UserLogInController.cs" />
@@ -154,11 +155,20 @@
     <Compile Include="Migrations\202102102301523_TookAwayEntityTable.Designer.cs">
       <DependentUpon>202102102301523_TookAwayEntityTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102282258420_IssueWithShiftModelUpdate.cs" />
+    <Compile Include="Migrations\202102282258420_IssueWithShiftModelUpdate.Designer.cs">
+      <DependentUpon>202102282258420_IssueWithShiftModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102282350198_ModifyDatabase.cs" />
+    <Compile Include="Migrations\202102282350198_ModifyDatabase.Designer.cs">
+      <DependentUpon>202102282350198_ModifyDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Position.cs" />
     <Compile Include="Models\Shift.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ShiftCreator.cs" />
     <Compile Include="ViewModels\TimeCard.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +229,7 @@
     <Content Include="Views\TimeCard\Index.cshtml" />
     <Content Include="Views\Reports\Index.cshtml" />
     <Content Include="Views\TimeCard\TimeCardCreation.cshtml" />
+    <Content Include="Views\ShiftCreator\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -248,6 +259,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102102301523_TookAwayEntityTable.resx">
       <DependentUpon>202102102301523_TookAwayEntityTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102282258420_IssueWithShiftModelUpdate.resx">
+      <DependentUpon>202102282258420_IssueWithShiftModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102282350198_ModifyDatabase.resx">
+      <DependentUpon>202102282350198_ModifyDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

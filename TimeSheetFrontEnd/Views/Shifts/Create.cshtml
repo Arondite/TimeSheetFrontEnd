@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Create";
+    DateTime CalanderValue = DateTime.Now;
 }
 
 <h2>Create</h2>
@@ -32,11 +33,11 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
-            </div>
+             @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+             <div class="col-md-10">
+                 @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })
+                 @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+             </div>   
         </div>
 
         <div class="form-group">
@@ -54,3 +55,4 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+<script src="https://kit.fontawesome.com/812e771e48.js" crossorigin="anonymous"></script>

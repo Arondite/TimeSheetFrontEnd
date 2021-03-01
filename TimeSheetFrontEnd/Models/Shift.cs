@@ -13,9 +13,10 @@ namespace TimeSheetFrontEnd.Models
 		/// <summary>
 		/// Datetime is a type of variable that is used in SQL
 		/// </summary>
-		public DateTime StartTime { get; set; }
-		public DateTime EndTime { get; set; }
+		public TimeSpan StartTime { get; set; }
+		public TimeSpan EndTime { get; set; }
 		public DateTime Date { get; set; }
+		public string Employee { get; set; }
 		/// <summary>
 		/// This is the foreign key to the entity table
 		/// </summary>

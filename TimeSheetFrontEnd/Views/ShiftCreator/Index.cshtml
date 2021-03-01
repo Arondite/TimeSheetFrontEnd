@@ -1,0 +1,52 @@
+﻿@using TimeSheetFrontEnd.ViewModels
+@model IEnumerable<TimeSheetFrontEnd.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+    DateTime CalendarValue = DateTime.Now;
+    TimeSpan startTime = TimeSpan.Zero;
+    TimeSpan endTime = TimeSpan.Zero;
+}
+
+<h2>ShiftCreator</h2>
+
+@*<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</div>*@
+<div class="form-horizontal">
+    <div>
+    
+    </div>
+    <form action="@Url.Action("ShiftCreator", "ReviewShift", new { startTime, endTime,  CalendarValue})" method="post" class="form-horizontal" id="shift">
+        <div class="form-group">
+            <label for="StartTime">Start Time:</label>
+            <input name="StartTime" type="time" required="required" class="form-control" id="StartTime" value="@startTime">
+        </div>
+        <div class="form-group">
+            <label for="EndTime">End Time:</label>
+            <input name="EndTime" type="time" required="required" class="form-control" id="EndTime" value="@endTime">
+        </div>
+        <div class="calendar-assets">
+            <h1 id="currentDate"></h1>
+            <div class="field">
+                <label for="date">Choose Day</label>
+                <input type="date" class="text-field" name="date" id="date" value="@CalendarValue" required>
+                @*<button type="submit" class="btn btn-small"><i class="fas fa-search"></i></button>*@
+            </div>
+        </div>
+        <div class="form-group">
+            <input class="btn btn-primary" name="submit" type="submit" id="submit" formmethod="POST" value="Submit">
+            &nbsp;&nbsp;&nbsp;
+            <input class="btn btn-danger" name="reset" type="reset" id="reset" value="Reset">
+        </div>
+</div>
+    <div class="form-group">
+            
+    </div>
+</div>
