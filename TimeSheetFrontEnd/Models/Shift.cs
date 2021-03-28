@@ -15,7 +15,7 @@ namespace TimeSheetFrontEnd.Models
 		/// </summary>
 		public TimeSpan StartTime { get; set; }
 		public TimeSpan EndTime { get; set; }
-		public DateTime Date { get; set; }
+		public DateTime DateOfShift { get; set; }
 		public string Employee { get; set; }
 		/// <summary>
 		/// This is the foreign key to the entity table

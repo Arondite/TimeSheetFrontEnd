@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TimeSheetFrontEnd.ViewModels;
+using TimeSheetFrontEnd.DAL;
 
 namespace TimeSheetFrontEnd.Controllers
 {
     public class TimeCardController : Controller
     {
+        private DatabaseHelper databaseHelper = new DatabaseHelper();
         // GET: TimeCard
         public ActionResult Index()
         {
@@ -16,7 +18,9 @@ namespace TimeSheetFrontEnd.Controllers
         }
         public ActionResult TimeCardCreation(DateTime date)
         {
-            TimeCard timeCard = new TimeCard();
+            private List<Shift> shifts = databaseHelper.ReturnShiftsOnGivenDate(date);
+            //private TimeCard timeCard = new TimeCard(shifts.Employ);
+
             return View();
         }
     }

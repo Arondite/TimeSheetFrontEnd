@@ -16,6 +16,18 @@ namespace TimeSheetFrontEnd.DAL
 			employees = context.Employees.ToList();
 			return employees;
 		}
+		public List<Shift> ListOfShifts()
+		{
+			List<Shift> shifts = new List<Shift>();
+			shifts = context.Shift.ToList();
+			return shifts;
+		}
+		public List<Shift> ReturnShiftsOnGivenDate(DateTime givenDate)
+		{
+			List<Shift> shifts = new List<Shift>();
+			shifts = context.Shift.Where(d => d.DateOfShift = givenDate).ToList();
+			return shifts;
+		}
 
 	}
 }
